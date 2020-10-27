@@ -15,9 +15,9 @@ class Song < ActiveRecord::Base
     #assign the newly created drake to the song
     #if drake exists as an artist, then assign him to the song
     binding.pry
-    drake = Artist.new(name: "Drake")
-    if
-    self.artist.name = "Drake"
+    #drake = Artist.new(name: "Drake")
+    #if
+    #self.artist.name = "Drake"
 
 
   end
