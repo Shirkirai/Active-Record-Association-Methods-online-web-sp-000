@@ -12,10 +12,15 @@ class Song < ActiveRecord::Base
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
     #binding.pry
     drake = Artist.create(name: "Drake")
-    if
-        drake
-    else
-        self.songs << self
-    end
+
   end
+
+  def exists?
+      if self.artist.size > 1
+          true
+      else
+          false
+      end
+  end
+
 end
