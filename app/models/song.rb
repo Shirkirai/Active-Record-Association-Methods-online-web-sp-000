@@ -16,6 +16,7 @@ class Song < ActiveRecord::Base
     #if drake exists as an artist, then assign him to the song
 
     drake = Artist.new(name: "Drake")
+    if 
     self.artist.name = "Drake"
 
 
